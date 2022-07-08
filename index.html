@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header><h1>To Do List</h1></header>
+
+
+    <button class="new-task-button" id="new_task">+ New Task</button>
+
+
+    <div class="new-task">
+        <div class="new-task-title">
+            <input type="text" name="Title" id="title" placeholder="Title of the task">
+        </div>
+        <div class="new-task-description">
+            <input type="text" name="Description" id="description" placeholder="Description of the task">
+            <input type="date">
+        </div>
+    </div>
+
+
+    <button class="new-task-button" id="add">Add</button>
+
+
+    <div class="display-task" id="overdue">
+        <div class="display-task-heading">
+            <img src="selected.png" class="icons">
+            Overdue
+        </div>
+        <hr color="#aa6f73" size="2px" >
+
+        <div class="display-task-title">
+            <div class="title">
+                <img src="unselected.png" class="icons">
+                Title of the task
+            </div>
+            <div class="edit-options">
+                <img src="edit.png" class="icons">
+                <img src="delete.png" class="icons">
+                <img src="completed.png" class="icons">
+            </div>
+        </div>
+
+        <div class="display-task-description">
+            <div class="description">
+                Description of the task
+            </div>
+            <div class="deadline">
+                Deadline: 01-02-2002
+            </div>
+        </div>
+    </div>
+
+
+    <div class="display-task" id="active">
+        <div class="display-task-heading">
+            <img src="selected.png" class="icons">
+            Active
+        </div>
+        <hr color="#aa6f73" size="2px" >
+
+        <div class="display-task-title">
+            <div class="title">
+                <img src="unselected.png" class="icons">
+                Title of the task
+            </div>
+            <div class="edit-options">
+                <img src="edit.png" class="icons">
+                <img src="delete.png" class="icons">
+                <img src="completed.png" class="icons">
+            </div>
+        </div>
+
+        <div class="display-task-description">
+            <div class="description">
+                Description of the task
+            </div>
+            <div class="deadline">
+                Deadline: 01-02-2002
+            </div>
+        </div>
+    </div>
+
+
+    <div class="display-task" id="completed">
+        <div class="display-task-heading">
+            <img src="selected.png" class="icons">
+            Completed
+        </div>
+        <hr color="#aa6f73" size="2px" >
+    
+        <div class="display-task-title">
+            <div class="title">
+                <img src="unselected.png" class="icons">
+                Title of the task
+            </div>
+            <div class="edit-options">
+                <img src="edit.png" class="icons">
+                <img src="delete.png" class="icons">
+            </div>
+        </div>
+
+        <div class="display-task-description">
+            <div class="description">
+                Description of the task
+            </div>
+            <div class="deadline">
+                Deadline: 01-02-2002
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
