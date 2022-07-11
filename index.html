@@ -10,34 +10,33 @@
 </head>
 <body>
 
+    
     <header><h1>To Do List</h1></header>
 
+    <button class="button" id="new-task">+ New Task</button>
 
-    <button class="new-task-button" id="new_task">+ New Task</button>
-
-
-    <div class="new-task">
-        <div class="new-task-title">
-            <input type="text" name="Title" id="title" placeholder="Title of the task">
+    <!-- <div class="new-task">
+        <div class="new-task-details">
+            <div class="new-task-title">
+                <input type="text" name="Title" id="title" placeholder="Title of the task">
+            </div>
+            <div class="new-task-description">
+                <input type="text" name="Description" id="description" placeholder="Description of the task">
+                <input type="date" id="date">
+            </div>
         </div>
-        <div class="new-task-description">
-            <input type="text" name="Description" id="description" placeholder="Description of the task">
-            <input type="date">
-        </div>
+        <button class="button" id="add">Add</button>
+        <button class="button" id="cancel">Cancel</button>
+    </div> -->
+
+    <div class="task-heading overdue">
+        <img src="unselected.png" class="icons">
+        Overdue[1]
+        <hr color="#aa6f73" size="3px">
     </div>
 
-
-    <button class="new-task-button" id="add">Add</button>
-
-
-    <div class="display-task" id="overdue">
-        <div class="display-task-heading">
-            <img src="selected.png" class="icons">
-            Overdue
-        </div>
-        <hr color="#aa6f73" size="2px" >
-
-        <div class="display-task-title">
+    <!-- <div class="task overdue">
+        <div class="task-title">
             <div class="title">
                 <img src="unselected.png" class="icons">
                 Title of the task
@@ -49,25 +48,25 @@
             </div>
         </div>
 
-        <div class="display-task-description">
+        <div class="task-description">
             <div class="description">
                 Description of the task
             </div>
             <div class="deadline">
-                Deadline: 01-02-2002
+                Deadline: 01-02-2002(Crossed!)
             </div>
         </div>
+    </div> -->
+
+
+
+    <div class="task-heading active">
+        <img src="selected.png" class="icons">
+        Active[1]
+        <hr color="#aa6f73" size="3px">
     </div>
-
-
-    <div class="display-task" id="active">
-        <div class="display-task-heading">
-            <img src="selected.png" class="icons">
-            Active
-        </div>
-        <hr color="#aa6f73" size="2px" >
-
-        <div class="display-task-title">
+    <!-- <div class="task active" id="active">
+        <div class="task-title">
             <div class="title">
                 <img src="unselected.png" class="icons">
                 Title of the task
@@ -79,7 +78,7 @@
             </div>
         </div>
 
-        <div class="display-task-description">
+        <div class="task-description">
             <div class="description">
                 Description of the task
             </div>
@@ -87,17 +86,15 @@
                 Deadline: 01-02-2002
             </div>
         </div>
+    </div> -->
+
+    <div class="task-heading completed">
+        <img src="selected.png" class="icons">
+        Completed[1]
+        <hr color="#aa6f73" size="3px">
     </div>
-
-
-    <div class="display-task" id="completed">
-        <div class="display-task-heading">
-            <img src="selected.png" class="icons">
-            Completed
-        </div>
-        <hr color="#aa6f73" size="2px" >
-    
-        <div class="display-task-title">
+    <!-- <div class="task completed" id="completed">
+        <div class="task-title">
             <div class="title">
                 <img src="unselected.png" class="icons">
                 Title of the task
@@ -108,7 +105,7 @@
             </div>
         </div>
 
-        <div class="display-task-description">
+        <div class="task-description">
             <div class="description">
                 Description of the task
             </div>
@@ -116,8 +113,9 @@
                 Deadline: 01-02-2002
             </div>
         </div>
-    </div>
+    </div> -->
 
+    <script src="index.js"></script>
 
 </body>
 </html>
